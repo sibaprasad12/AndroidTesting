@@ -17,6 +17,15 @@
         testImplementation 'junit:junit:4.13.2'
         testImplementation 'org.mockito:mockito-core:2.21.0'
     ```
+## Advantage Of Unit  testing
+- Helps in finding bugs early.
+- As it helps to find the bugs in the early stage of development and reduces the development cost and time.
+- Simplifies refactoring and provides documentation.
+## Google Truth
+- But with JUnit we will use Google Truth, to simplify the assertions. As it is not available by default; we need to add it inside the dependency block of app level build.gradle file.
+-   ```
+        testImplementation "com.google.truth:truth:1.1.2"
+    ```
 - **@Test:** @Test is an annotation provided by JUnit Framework for marking a method as a test case. As you can see here, each method is a test case testing the input field for a possible input. This instructs the compiler to consider the method as a test case in the test suit.
 - **assertTrue():** assertTrue is a method provided by Junit Framework to assert (force) the value inside it’s parentheses as TRUE. If the value inside the parentheses evaluates to be false, the test case fails.
 - **assertFalse():** Same as the assertTrue method except that it asserts the argument inside the parentheses to be false instead of true. If the passed parameter is true, the test case fails.
